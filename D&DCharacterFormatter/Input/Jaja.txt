@@ -1,0 +1,50 @@
+{
+  "CharacterName": "Jaja",
+  "Level": 9,
+  "Race": "Beast (Magical Giant Panther)",
+  "Class": "Beast Companion",
+  "Alignment": "Neutral",
+  "Background": "Magical Creature",
+  "HP": "90 (9d10 Hit Dice)",
+  "AC": 14,
+  "Speed": "50 ft., climb 40 ft.",
+  "AbilityScores": {
+    "Strength": { "Score": 18, "Modifier": "+4" },
+    "Dexterity": { "Score": 16, "Modifier": "+3" },
+    "Constitution": { "Score": 14, "Modifier": "+2" },
+    "Intelligence": { "Score": 3, "Modifier": "-4" },
+    "Wisdom": { "Score": 12, "Modifier": "+1" },
+    "Charisma": { "Score": 7, "Modifier": "-2" }
+  },
+  "SavingThrows": {
+    "Strength": "+6",
+    "Dexterity": "+5"
+  },
+  "Skills": {
+    "Perception": "+3",
+    "Stealth": "+7",
+    "Athletics": "+6"
+  },
+  "Senses": "Darkvision 60 ft., Passive Perception 13",
+  "Languages": "None",
+  "SpecialTraits": {
+    "KeenSmell": "The panther has advantage on Wisdom (Perception) checks that rely on smell.",
+    "Pounce": "If the panther moves at least 20 feet straight toward a creature and then hits it with a claw attack on the same turn, that target must succeed on a DC 14 Strength saving throw or be knocked prone.",
+    "MagicalResistance": "The panther has advantage on saving throws against spells and other magical effects."
+  },
+  "Actions": {
+    "Multiattack": "The panther makes two attacks: one with its bite and one with its claws.",
+    "Bite": "Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 1d8 + 4 piercing damage.",
+    "Claw": "Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 2d6 + 4 slashing damage."
+  },
+  "Reactions": {
+    "UncannyDodge": "When an attacker the panther can see hits it with an attack, it can use its reaction to halve the attack's damage against it."
+  },
+  "Features": {
+    "MagicalBond": "Jaja is magically bonded to a specific individual or group and shares a telepathic link with them."
+  },
+  "Equipment": {
+    "Description": "None (but may have magical accessories or items based on the campaign)"
+  },
+  "Notes": "Jaja is a magical giant panther with enhanced intelligence and mystical abilities. As a companion, it follows the commands of its bonded ally and acts with loyalty and protectiveness. Customize its background, appearance, and any magical properties based on the narrative and campaign requirements."
+}

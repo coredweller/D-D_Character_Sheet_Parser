@@ -1,0 +1,45 @@
+{
+  "CharacterName": "Bog Elemental",
+  "Level": 5,
+  "Race": "Elemental",
+  "Class": "Nature Incarnate",
+  "Alignment": "Neutral",
+  "Background": "Bog Guardian",
+  "HP": "68 (8d10+20 Hit Dice)",
+  "AC": 15,
+  "Speed": "20 ft., swim 40 ft.",
+  "AbilityScores": {
+    "Strength": { "Score": 18, "Modifier": "+4" },
+    "Dexterity": { "Score": 10, "Modifier": "+0" },
+    "Constitution": { "Score": 14, "Modifier": "+2" },
+    "Intelligence": { "Score": 6, "Modifier": "-2" },
+    "Wisdom": { "Score": 12, "Modifier": "+1" },
+    "Charisma": { "Score": 7, "Modifier": "-2" }
+  },
+  "SavingThrows": {
+    "Strength": "+6",
+    "Constitution": "+4"
+  },
+  "Skills": {
+    "Perception": "+3",
+    "Nature": "+1",
+    "Stealth": "+2"
+  },
+  "Senses": "Darkvision 60 ft., Passive Perception 13",
+  "Languages": "Primordial",
+  "SpecialTraits": {
+    "Amphibious": "Can breathe air and water.",
+    "Elemental Resilience": "Immune to poison, exhaustion, and being paralyzed; Resistant to bludgeoning, piercing, and slashing damage from nonmagical attacks."
+  },
+  "Actions": {
+    "Slam": "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 2d8 + 4 bludgeoning damage.",
+    "Mud Sling": "Ranged Weapon Attack: +3 to hit, range 30/60 ft., one target. Hit: 1d6 + 1 bludgeoning damage. On a hit, the target must succeed on a DC 12 Strength saving throw or be restrained until the start of the elemental's next turn."
+  },
+  "Features": {
+    "Bog Aura": "Creatures within 10 feet of the elemental have their speed reduced by 10 feet and must succeed on a DC 12 Strength saving throw or be restrained if they end their turn in the aura."
+  },
+  "Equipment": {
+    "Description": "None"
+  },
+  "Notes": "The Bog Elemental is a guardian of the marshlands, embodying the essence of the bog. It moves silently through the muck, using its elemental powers to control mud and water. The elemental is indifferent to the affairs of other creatures but will fiercely protect its swampy domain."
+}
