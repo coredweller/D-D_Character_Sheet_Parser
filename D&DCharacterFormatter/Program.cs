@@ -8,18 +8,24 @@ namespace D_DCharacterFormatter
         {
             Console.Write("Enter the text file location (e.g., character_sheet.txt): ");
             string fileLocation = Console.ReadLine();
+            Console.Write("Enter the location where you want the html output: ");
+            string outLocation = Console.ReadLine();
+            Console.Write("Enter the desired file name of the html output: ");
+            string desiredOutputFileName = Console.ReadLine();
 
-            ParserPath(fileLocation);
+            var finalName = $"{outLocation}\\{desiredOutputFileName}";
+
+            ParserPath(fileLocation, finalName);
             //ConverterPath(fileLocation);
             //GeneratorPath(fileLocation);
         }
 
-        private static void WriteHtmlToFile(string htmlContent)
+        private static void WriteHtmlToFile(string htmlContent, string outputName)
         {
-            File.WriteAllText("F:\\Projects\\D&D AI Char Generator Formatter\\src\\D&DCharacterFormatter\\Output\\character_sheet.html", htmlContent);
+            File.WriteAllText(outputName, htmlContent);
         }
 
-        private static void ParserPath(string fileLocation)
+        private static void ParserPath(string fileLocation, string finalName)
         {
             // Read the JSON character template from a file
             string jsonContent = File.ReadAllText(fileLocation);
@@ -32,7 +38,7 @@ namespace D_DCharacterFormatter
             string htmlContent = parser.GenerateHtml(characterData);
 
             // Write HTML content to a file
-            WriteHtmlToFile(htmlContent);
+            WriteHtmlToFile(htmlContent, finalName);
 
             Console.WriteLine($"HTML file generated successfully");
         }
@@ -44,7 +50,8 @@ namespace D_DCharacterFormatter
                 var converter = new CharacterSheetConverter();
                 string characterSheetText = converter.ReadCharacterSheet(fileLocation);
                 string htmlContent = converter.ConvertToHtml(characterSheetText);
-                WriteHtmlToFile(htmlContent);
+                var fileName = "F:\\Projects\\D&D AI Char Generator Formatter\\src\\D&DCharacterFormatter\\Output\\character_sheet.html";
+                WriteHtmlToFile(htmlContent, fileName);
                 Console.WriteLine("HTML character sheet generated successfully.");
             }
             catch (Exception e)
